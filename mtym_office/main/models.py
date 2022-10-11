@@ -90,7 +90,7 @@ class CustomUser(AbstractBaseUser):
     last_name       = models.CharField(max_length=150)
     company_name    = models.CharField(max_length=150, unique=True)
     company_adress  = models.CharField(max_length=150)
-    company_phone   = PhoneNumberField()
+    company_phone   = models.CharField(max_length=150)
     is_admin        = models.BooleanField(default = False)
     is_active       = models.BooleanField(default = False)
     is_staff        = models.BooleanField(default = False)
@@ -107,11 +107,7 @@ class CustomUser(AbstractBaseUser):
         return True
 
 
-class Furniture(models.Model) :
-    room_name = models.CharField(max_length=150)
-    
-class Order(models.Model) :
-    furniture_list = models.ForeignKey('Furniture', on_delete = models.CASCADE)
+
 
 
 

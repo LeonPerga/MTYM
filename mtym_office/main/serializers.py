@@ -61,6 +61,7 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
         fields = ["first_name", "last_name", "company_name", "email", "company_adress", "company_phone", "password"]
+        
 class SignupSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
