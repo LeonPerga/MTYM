@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import HomePage from "./HomePage";
+import HomePage from "./Homepage";
 import { Container } from "react-bootstrap";
 import background from "../../Images/background.jpg"
 import "core-js/stable";
