@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 #settings file that contains secret key
-./mtym_office/settings.py
+settings.py
